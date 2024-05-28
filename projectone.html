@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    .banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100px;
+      background-color: black;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .option {
+      flex-grow: 1;
+      height: 100%;
+      line-height: 100px;
+      font-family: cursive;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      color: black;
+      font-size: 22px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .button3 {
+      background-color: #B0DDF2;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      border: none;
+      margin: 0 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .button2 {
+      background-color: #E4C1F9;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      border: none;
+      margin: 0 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .container2{
+      display: flex;
+      background-color: #ff99c8;
+      height:500px;
+    }
+    .text2 {
+      flex: 1;
+      width: 40%;
+      justify-content: center;
+      align-items: center;
+    }
+    .button10 {
+      background-color: #D8F1E2;
+      color: black;
+      margin: 0 10px;
+      font-size: 18px;
+      cursor: pointer;
+      width:100%;
+      height:85px;
+    }
+
+    .button11 {
+      background-color: #A5E0FA;
+      color: black;
+      margin: 0 10px;
+      font-size: 18px;
+      cursor: pointer;
+      width:100%;
+      height:85px;
+    }
+
+
+    .image3 {
+      flex: 1;
+      width:60%;
+    }
+
+    .container4{
+      background-color:none;
+    }
+
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="banner">
+    <div class="option"><a href="resume.html">Resume</a></div>
+    <div class="option"><a href="projects.html">Projects</a></div>
+    <div class="option"><a href="index.html"><img src="Name.png" alt="name" height="100" width="250"></a></div>
+    <div class="option"><a href="contact.html">Contact Me</a></div>
+    <div class="option"><a href="fun.html">Funsies</a></div>
+  </div>
+<h1 align="center">ForeverGlow</h1>
+  <div class="button-container">
+    <button class="button3" onclick="back()">Back To Projects</button>
+    <button class="button2" onclick="next()">Go to SONGnSTAY</button>
+  </div>
+
+  <script>
+    function back() {
+      location.replace("projects.html")
+    }
+    function next() {
+      location.replace("projecttwo.html")
+    }
+  </script>
+
+
+  <div class="container2">
+        <div class="text2"><h2>Description</h2><br><p>As you can see to the right is our homepage of our website. The purpose for our website is to make young women feel confident in themselves. This webiste is open to both men and women, except women may find it more useful.</p> <h2>My Roles</h2><br><p>In this project I was the designer, researcher, and side coder. I designed all the layouts, logos, colors and what to code. I did do part of the coding in the website as well. I was the main researcher for this project which meant that I had to have a good grasp on the topic of skincare, makeup, and haircare. I researched through tons of different prodcts to find the best ones.</p></div>
+        <div class="image3"><img src="foreverglow.png" alt="forverglow" height="500" width="800px"></div>
+
+    </div>
+  </div>
+
+<div class="container4">
+  <button class="button10" onclick="web()">Click Me to view the webiste</button>
+  <button class="button11" onclick="doc()">Click Me to view the Documentation</button>
+  </div>
+
+  <script>
+  function web() {
+    location.replace("https://arpitashanbhag01.github.io/foreverglow/")
+  }
+  function doc() {
+    location.replace("https://docs.google.com/document/d/1g5DbsZqYU0ngT9Ez_Af3htzQ74RzLCQ7XnAA-S0Jrrw/edit?usp=sharing")
+  }
+  </script>
+</div>
+  <script src="script.js"></script>
+</body>
+
+</html>

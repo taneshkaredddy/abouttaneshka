@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Review Cards </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style> 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .main-container {
+            padding: 30px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            margin: 20px;
+            padding: 20px;
+            width: 500px;
+            display: grid;
+            min-height: 200px;
+            border-radius: 10px;
+            transition: all 0.2s;
+            grid-template-rows: 20px 50px 1fr 50px;
+            box-shadow: 0px 6px 10px rgba(74, 70, 74, 0.414);
+        }
+
+        .card:hover {
+            transform: scale(1.01);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .readMore,
+        .close,
+        .card div {
+            cursor: pointer;
+            position: relative;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .card div ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .card div ul li {
+            margin: 0 0.3rem;
+            font-size: 1.1rem;
+        }
+
+        .desc {
+            color: rgb(66, 59, 59);
+        }
+
+        .readMore::after {
+            content: "";
+            position: absolute;
+            top: 25px;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            transition: all 0.5s;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .readMore:hover {
+            color: #fff;
+        }
+
+        .readMore:hover::after {
+            width: 100%;
+        }
+
+        .close {
+            grid-row: 1/2;
+            justify-self: end;
+        }
+
+        .card div {
+            grid-row: 2/3;
+            font-size: 30px;
+        }
+
+        .read-more {
+            grid-row: 4/5;
+            align-self: center;
+        }
+
+        .card1 {
+            background: #3fbafe;
+        }
+
+        .card2 {
+            background:#f7a976;
+        }
+
+        .card3 {
+            background:#b69efe;
+        }
+
+        .card4 {
+            background: #60efbc;
+        }
+
+        .card5 {
+            background: #f588d8;
+        }
+
+
+        @media (max-width: 1600px) {
+            .cards {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="cards">
+            <div class="card card1">
+
+                <p class="close"><i class="fa-solid fa-xmark"></i></p>
+                <p class="desc">Ut enim ad minim veniam. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="read-more">
+                    <a class="readMore" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+
+            <div class="card card2">
+                <div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+                <p class="close"><i class="fa-solid fa-xmark"></i></p>
+                <p class="desc">Ut enim ad minim veniam. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="read-more">
+                    <a class="readMore" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+
+            <div class="card card3">
+                <div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+                <p class="close"><i class="fa-solid fa-xmark"></i></p>
+                <p class="desc">Ut enim ad minim veniam. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="read-more">
+                    <a class="readMore" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+
+            <div class="card card4">
+                <div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+                <p class="close"><i class="fa-solid fa-xmark"></i></p>
+                <p class="desc">Ut enim ad minim veniam. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="read-more">
+                    <a class="readMore" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

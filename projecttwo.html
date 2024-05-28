@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    .banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100px;
+      background-color: black;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .option {
+      flex-grow: 1;
+      height: 100%;
+      line-height: 100px;
+      font-family: cursive;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      color: black;
+      font-size: 22px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .button3 {
+      background-color: #D0F3DE;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      border: none;
+      margin: 0 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .button2 {
+      background-color: #FAF5C5;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      border: none;
+      margin: 0 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .container2{
+      display: flex;
+      background-color: #A5E0FA;
+      height:500px;
+    }
+    .text2 {
+      flex: 1;
+      width: 40%;
+      justify-content: center;
+      align-items: center;
+    }
+    .button10 {
+      background-color: #D8F1E2;
+      color: black;
+      margin: 0 10px;
+      font-size: 18px;
+      cursor: pointer;
+      width:100%;
+      height:85px;
+    }
+
+    .button11 {
+      background-color: #ff99c8;;
+      color: black;
+      margin: 0 10px;
+      font-size: 18px;
+      cursor: pointer;
+      width:100%;
+      height:85px;
+    }
+
+
+    .image3 {
+      flex: 1;
+      width:60%;
+    }
+
+    .container4{
+      background-color:none;
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="banner">
+    <div class="option"><a href="resume.html">Resume</a></div>
+    <div class="option"><a href="projects.html">Projects</a></div>
+    <div class="option"><a href="index.html"><img src="Name.png" alt="name" height="100" width="250"></a></div>
+    <div class="option"><a href="contact.html">Contact Me</a></div>
+    <div class="option"><a href="fun.html">Funsies</a></div>
+  </div>
+
+  <h1 align="center">SONGnSTAY</h1>
+  <div class="button-container">
+    <button class="button3" onclick="back()">Back To Projects</button>
+    <button class="button2" onclick="next()">Go to ForeverGlow</button>
+  </div>
+
+  <script>
+    function back() {
+      location.replace("projects.html")
+    }
+
+    function next() {
+      location.replace("projectone.html")
+    }
+  </script>
+
+
+    <div class="container2">
+      <div class="image3"><img src="mitapp.png" alt="forverglow" height="500" width="700px"></div>
+          <div class="text2"><h2>Description</h2><br><p>As you can see in the left this is the front page of our app. This was created on MIT App inventer. The idea for this project is to be able to choose a song and when the song ends the game in the next page also ends. There are differet levels for the game and each level is harder. It is named SongnStay. Stays are what fans of stray kids are called since all of our songs are from SKZ</p> <h2>My Roles</h2><br><p>In this project I was the designer, and coder. Since it was on MIT App inventor only one person could code at a time so while one was coding the other was designing. In the end me and my partner took turns. .</p></div>
+
+      </div>
+    </div>
+
+  <div class="container4">
+    <button class="button10" onclick="web()">Click Me to view the APP</button>
+    </div>
+
+    <script>
+    function web() {
+      location.replace("https://drive.google.com/file/d/1w3oCkpy1BFCrctetVUf4V-fG6Tx35lrh/view?usp=sharing")
+    }
+    </script>
+  </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
